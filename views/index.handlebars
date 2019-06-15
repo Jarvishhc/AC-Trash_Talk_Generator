@@ -1,0 +1,44 @@
+<div class="container">
+  <h1 class="text-center mt-2">你想對誰說幹話？</h1>
+
+  <form method="POST" action="/">
+    <div class="row">
+      <div class="col-sm">
+        <div class="profile-photo" id="engineer-photo"></div>
+        <div class="form-check text-center">
+          <input class="form-check-input" type="radio" name="target" value="engineer" id="engineerRadio"
+            {{is target 'engineer'}}>
+          <label class="form-check-label" for="engineerRadio">工程師</label>
+        </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="profile-photo" id="designer-photo"></div>
+        <div class="form-check text-center">
+          <input class="form-check-input" type="radio" name="target" value="designer" id="designerRadio"
+            {{is target 'designer'}}>
+          <label class="form-check-label" for="designerRadio">設計師</label>
+        </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="profile-photo" id="entrepreneur-photo"></div>
+        <div class="form-check text-center">
+          <input class="form-check-input" type="radio" name="target" value="entrepreneur" id="entrepreneurRadio"
+            {{is target 'entrepreneur'}}>
+          <label class="form-check-label" for="entrepreneurRadio">創業家</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-2">
+      <div class="col-sm-2">
+        <button class="btn btn-primary" type="submit">產生幹話</button>
+      </div>
+      <div class="col-sm-10 form-group">
+        <textarea class="form-control" name="textField" rows="5">{{trashTalk}}</textarea>
+      </div>
+    </div>
+  </form>
+
+</div>
