@@ -1,3 +1,7 @@
+body, html {
+  height: 100%;
+}
+
 .profile-photo {
   width: 100%;
   height: 250px;
@@ -18,7 +22,7 @@
 }
 
 body {
-  background: url('https://images.pexels.com/photos/2439625/pexels-photo-2439625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-image: url('https://images.pexels.com/photos/2439625/pexels-photo-2439625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
